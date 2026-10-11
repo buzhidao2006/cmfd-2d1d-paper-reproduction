@@ -40,3 +40,7 @@ python -m pytest tests/ -v
 已加入可独立验证的周期轴向 [1D SN 菱形差分子模块](docs/STAGE2_AXIAL_SN.md)，覆盖制造解、均匀介质极限与离散守恒。它仍未与 2D MOC 或 CMFD 耦合，不改变上文“尚非完整复现”的结论。
 
 随后增加了[轴向 Fourier 因子交叉验证](docs/STAGE3_AXIAL_FOURIER.md)：逐个周期模式比较解析离散符号与实空间求解器的一次迭代，仍不将其称为论文完整谱半径复现。
+
+现已增加[一维 CMFD 界面电流一致性](docs/STAGE4_CMFD_1D.md)检查，用轴向 SN 面电流验证粗网格修正公式与定源平衡；它不是完整的三维 pCMFD 加速求解。
+
+每次推送与拉取请求会在 Python 3.10、3.12 下自动运行代码检查和测试。
