@@ -38,3 +38,5 @@ python -m pytest tests/ -v
 ## 后续进展
 
 已加入可独立验证的周期轴向 [1D SN 菱形差分子模块](docs/STAGE2_AXIAL_SN.md)，覆盖制造解、均匀介质极限与离散守恒。它仍未与 2D MOC 或 CMFD 耦合，不改变上文“尚非完整复现”的结论。
+
+随后增加了[轴向 Fourier 因子交叉验证](docs/STAGE3_AXIAL_FOURIER.md)：逐个周期模式比较解析离散符号与实空间求解器的一次迭代，仍不将其称为论文完整谱半径复现。

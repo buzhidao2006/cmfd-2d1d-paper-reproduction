@@ -16,7 +16,6 @@ from pathlib import Path
 
 import numpy as np
 
-
 ORDERS = ("1d2d", "2d1d")
 _DIRECTIONS = np.asarray(list(product((-1.0, 1.0), repeat=3))) / np.sqrt(3.0)
 
